@@ -5,8 +5,8 @@ This Project is only reposiory for solving AI Enginner Party
 * [Python 3.6+](https://www.python.org/downloads/)
 * [Pytorch 1.0+](https://pytorch.org/)
 * [nni](https://github.com/microsoft/nni)(AutoML)
-* [google-cloud-storage 1.18.0](https://cloud.google.com/gcp/?hl=ko&utm_source=google&utm_medium=cpc&utm_campaign=japac-KR-all-ko-dr-bkws-all-super-trial-e-dr-1003987&utm_content=text-ad-none-none-DEV_c-CRE_249736095774-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20T1%20%7C%20EXA%20%7C%20General%20%7C%201:1%20%7C%20KR%20%7C%20ko%20%7C%20cloud%20platform%20%7C%20google%20cloud%20platform%20%7C%20en-KWID_43700030027797672-kwd-26415313501&userloc_1009871&utm_term=KW_google%20cloud%20platform&gclid=Cj0KCQjwqs3rBRCdARIsADe1pfQ8mLmhW5SksKfrWD1lvCV2S5VYabK5fgOXGd12RmZaw8tXYfKk9SUaAtJxEALw_wcB)
-* [google-cloud-bigquery 1.18.0]
+* [google-cloud-storage 1.18.0](https://cloud.google.com/products/storage/?hl=ko&utm_source=google&utm_medium=cpc&utm_campaign=japac-KR-all-ko-dr-bkws-all-super-trial-e-dr-1003987&utm_content=text-ad-none-none-DEV_c-CRE_249736096014-ADGP_Hybrid+%7C+AW+SEM+%7C+BKWS+~+T1+%7C+EXA+%7C+Storage+%7C+1:1+%7C+KR+%7C+ko+%7C+cloud+storage+%7C+google+storage+%7C+en-KWID_43700030027797723-kwd-2833008840&userloc_1009871&utm_term=KW_google%20storage&gclid=Cj0KCQjwqs3rBRCdARIsADe1pfSIWITyBlJz2NmEsJkUiTxNVmgexAXcWS3Man5-XZ7QlfjSQQb1UDAaAhcwEALw_wcB)
+* [google-cloud-bigquery 1.18.0](https://cloud.google.com/bigquery/?hl=ko&utm_source=google&utm_medium=cpc&utm_campaign=japac-KR-all-ko-dr-bkws-all-super-trial-e-dr-1003987&utm_content=text-ad-none-none-DEV_c-CRE_263273142169-ADGP_Hybrid+%7C+AW+SEM+%7C+BKWS+~+T1+%7C+EXA+%7C+Big+Data+%7C+1:1+%7C+KR+%7C+ko+%7C+big+query+%7C+google+bigquery+%7C+en-KWID_43700030027797576-kwd-63326440124&userloc_1009871&utm_term=KW_google%20bigquery&gclid=Cj0KCQjwqs3rBRCdARIsADe1pfTmpa8viuebXAHYmpK815sGPjBcp6AJ5Wp8o8CRjjOSMEXwt3pnFZgaAvCxEALw_wcB)
 
  
  ## Quick Tutorial and Usage
