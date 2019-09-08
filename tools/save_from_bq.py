@@ -1,6 +1,7 @@
-
-from __future__ import absolute_import
-
+'''
+    code by Juntae Kim
+    reference : https://github.com/graykode/mnist-flow/blob/master/load_bq.py
+'''
 import os
 import numpy as np
 from google.cloud import bigquery

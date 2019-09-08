@@ -1,3 +1,7 @@
+'''
+    code by Juntae Kim
+'''
+
 from torch.utils.data import DataLoader, Dataset
 import numpy as np
 import torch

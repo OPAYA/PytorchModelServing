@@ -1,4 +1,7 @@
-
+'''
+	code by Juntae Kim
+	reference : https://github.com/graykode/mnist-flow/blob/master/gfunction/main.py
+'''
 import os
 import numpy as np
 import requests
@@ -22,14 +25,6 @@ def predict(request):
 	image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 	img = torch.tensor(image).float().unsqueeze(1).reshape(-1, 1, 28, 28)
 
-	
-	# MODEL_URL = 'https://storage.cloud.google.com/upload-bigquery/model.pth?hl=ko'
-	# r = requests.get(MODEL_URL)
-
-
-	# file = open("/tmp/model.pth", 'wb')
-	# file.write(r.content)
-	# file.close()
 	os.mkdir('/tmp/save_model')
 	client = storage.Client()
 	bucket = client.get_bucket(bucket_or_name='upload-bigquery')
