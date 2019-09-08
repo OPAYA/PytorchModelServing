@@ -105,7 +105,7 @@ curl -X POST -H "Content-Type:application/json"  -d '{"url":"[image url]"}'
 ### Reference
 - [nni AutoML](https://github.com/microsoft/nni)
 - [google cloud platform](https://cloud.google.com/gcp/?hl=ko&utm_source=google&utm_medium=cpc&utm_campaign=japac-KR-all-ko-dr-bkws-all-super-trial-e-dr-1003987&utm_content=text-ad-none-none-DEV_c-CRE_249736095768-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20T1%20%7C%20EXA%20%7C%20General%20%7C%201:1%20%7C%20KR%20%7C%20ko%20%7C%20cloud%20platform%20%7C%20google%20cloud%20platform%20%7C%20en-KWID_43700030027797672-kwd-26415313501&userloc_1009871&utm_term=KW_google%20cloud%20platform&gclid=Cj0KCQjwqs3rBRCdARIsADe1pfTUBYryyxIz4elnIW-MaexvwpV-RHlOhODxME2Hid7kGJAYJJtvDPgaAj8dEALw_wcB)
-- [Tae Hwan Jung repository](github.com/graykode/mnist-flow)
+- [Tae Hwan Jung repository](https://github.com/graykode/mnist-flow)
 
 ### Author
 - Juntae Kim, Korea University [DAVIAN LAB](http://davian.korea.ac.kr/)
