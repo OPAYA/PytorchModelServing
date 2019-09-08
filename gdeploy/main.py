@@ -22,8 +22,11 @@ def predict(request):
 	url = json_request.get('url')
 	resp = urlopen(url)
 	image = np.asarray(bytearray(resp.read()), dtype="uint8")
-	image = cv2.imdecode(image, cv2.IMREAD_COLOR)
-	img = torch.tensor(image).float().unsqueeze(1).reshape(-1, 1, 28, 28)
+
+	if len(image) != 784:
+		return "Not correct Image size"
+		
+	img = torch.tensor(img).float().reshape(-1, 1, 28, 28)
 
 	os.mkdir('/tmp/save_model')
 	client = storage.Client()
@@ -52,7 +55,9 @@ def predict(request):
 		    return F.log_softmax(x, dim=1)
 
 	model = Net()
-	model.load_state_dict('/tmp/save_model/model_param.pth')
+	checkpoint = torch.tensor('/tmp/save_model/model_param.pth')
+
+	model.load_state_dict(checkpoint['model'])
  
 	out = model(img)
 
