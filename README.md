@@ -20,28 +20,28 @@ This Project is the reposiory for solving AI Engineer Party
  
  ## Quick Tutorial and Usage
  
- ### 1.set your GCE region. In my case `us central1` 
+ 1.set your GCE region. In my case `us central1` 
  ```shell
  $ gcloud config set compute/zone us-central1
  ```
  
- ### 2. install Google Cloud SDK
+ 2. install Google Cloud SDK
  ```shell
  $ https://cloud.google.com/sdk/docs/quickstarts
  ```
  
- ### 3. install google cloud python API
+ 3. install google cloud python API
  ```shell
  $ pip install --upgrade google-cloud-storage
  $ pip install --upgrade google-cloud-bigquery
  ```
  
- ### 4. Download MNIST dataset
+4. Download MNIST dataset
  ```shell
  $ tools/make_data.py
 ```
 
-### 5. Upload on BigQuery
+5. Upload on BigQuery
 ```shell
 $ bq load --source_formag=CSV -F":" mnist.train data/train.txt.gz\
   "key:integer, image:string,label:integer"
@@ -49,7 +49,7 @@ $ bq load --source_formag=CSV -F":" mnist.test data/test.txt.gz\
   "key:integer, image:string,label:integer"
 ```
 
-### 6. Check BirQuery python API operation
+6. Check BirQuery python API operation
 ```python
 from google.cloud import bigquery
 client = bigquery.Client()
@@ -61,19 +61,19 @@ for row in query_job: # API request -fetches results
   print(row)
 ```
 
-### 7. Install AutoML nni of Microsoft
+7. Install AutoML nni of Microsoft
 ```shell
 pip install --upgrade nni
 ```
 click here for details(https://github.com/microsoft/nni)
 
-### 8. Training using AutoML
+8. Training using AutoML
 ```shell
 nnictl create --config config.yml
 ```
 <p align="center"><img width="100%" src="img/automl.png"></p>
 
-### 9. Create Google Storage Bucket to upload saved model state_dict 
+9. Create Google Storage Bucket to upload saved model state_dict 
 ```shell
 $ PROJECT_ID = $(gcloud config list project --format "value(core.projcet)")
 $ BUCKET="${PROJECT_ID}-ml"
@@ -85,12 +85,12 @@ $ gsutil mb -c regional -l us-central1 gs://${BUCKET}
 $ gsutil -m cp -R save_model/model_param.pth gs://${BUCKET}
 ```
 
-### 10. Deploy google functions
+10. Deploy google functions
 ```shell
 $ cd gdeploy
 $ gcloud beta functions deploy [function_name] --runtime python37 --trigger-http
 ```
-### 11. Test API usgin 'curl'
+11. Test API usgin 'curl'
 click here for details about [curl](https://curl.haxx.se/)
 ```shell
 $ curl -X  POST\
