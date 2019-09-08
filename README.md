@@ -1,6 +1,12 @@
 # Model_Serving
 This Project is only reposiory for solving AI Enginner Party
 
+## Procedure
+- Download the data and upload it to bigquery.
+- Load data and learn with AutoML.
+- Store the learned weight in storage.
+- Deploy the model. In this case, load the weight from storage and then inference.
+
 ## Dependencies
 * [Python 3.6+](https://www.python.org/downloads/)
 * [Pytorch 1.0+](https://pytorch.org/)
