@@ -1,5 +1,5 @@
 # Model_Serving
-This Project is only reposiory for solving AI Enginner Party
+This Project is the reposiory for solving AI Engineer Party
 
 ## Architecture
 <p align="center"><img width="100%" src="img/architecture.png"></p>
