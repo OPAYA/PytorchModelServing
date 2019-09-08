@@ -78,7 +78,7 @@ $ gsutil -m cp -R save_model/model_param.pth gs://${BUCKET}
 ### 10. Deploy google functions
 ```shell
 $ cd gdeploy
-$ gcloud beta functions deploy predict --runtime python37 --trigger-http
+$ gcloud beta functions deploy [function_name] --runtime python37 --trigger-http
 ```
 ### 11. Test API usgin 'curl'
 click here for details about [curl](https://curl.haxx.se/)
