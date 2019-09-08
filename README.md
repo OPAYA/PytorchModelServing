@@ -61,19 +61,24 @@ for row in query_job: # API request -fetches results
   print(row)
 ```
 
-7. Install AutoML nni of Microsoft
+7. Save data from Bigquery
+```shell
+ python tools/data_from_bq.py
+```
+
+8. Install AutoML nni of Microsoft
 ```shell
 pip install --upgrade nni
 ```
 click here for details(https://github.com/microsoft/nni)
 
-8. Training using AutoML
+9. Training using AutoML
 ```shell
 nnictl create --config config.yml
 ```
 <p align="center"><img width="100%" src="img/automl.png"></p>
 
-9. Create Google Storage Bucket to upload saved model state_dict 
+10. Create Google Storage Bucket to upload saved model state_dict 
 ```shell
 $ PROJECT_ID = $(gcloud config list project --format "value(core.projcet)")
 $ BUCKET="${PROJECT_ID}-ml"
@@ -85,12 +90,12 @@ $ gsutil mb -c regional -l us-central1 gs://${BUCKET}
 $ gsutil -m cp -R save_model/model_param.pth gs://${BUCKET}
 ```
 
-10. Deploy google functions
+11. Deploy google functions
 ```shell
 $ cd gdeploy
 $ gcloud beta functions deploy [function_name] --runtime python37 --trigger-http
 ```
-11. Test API usgin 'curl'
+12. Test API usgin 'curl'
 click here for details about [curl](https://curl.haxx.se/)
 ```shell
 $ curl -X  POST\
@@ -104,10 +109,3 @@ curl -X POST -H "Content-Type:application/json"  -d '{"url":"[image url]"}'
 
 ### Author
 - Juntae Kim, Korea University [DAVIAN LAB](http://davian.korea.ac.kr/)
-
-
-
-
-
- 
- 
