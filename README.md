@@ -1,6 +1,9 @@
 # Model_Serving
 This Project is only reposiory for solving AI Enginner Party
 
+## Architecture
+<p align="center"><img width="100%" src="img/architecture.png"></p>
+
 ## Procedure
 - Download the data and upload it to bigquery.
 - Load data and learn with AutoML.
