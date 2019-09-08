@@ -62,6 +62,7 @@ click here for details(https://github.com/microsoft/nni)
 ```shell
 nnictl create --config config.yml
 ```
+<p align="center"><img width="100%" src="img/automl.PNG"></p>
 
 ### 9. Create Google Storage Bucket to upload saved model state_dict 
 ```shell
