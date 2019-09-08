@@ -1,15 +1,13 @@
 # Model_Serving
 This Project is only reposiory for solving AI Enginner Party
 
-<br/>
 ## Dependencies
 * [Python 3.6+](https://www.python.org/downloads/)
 * [Pytorch 1.0+](https://pytorch.org/)
 * [nni](https://github.com/microsoft/nni)(AutoML)
 * [google-cloud-storage 1.18.0](https://cloud.google.com/gcp/?hl=ko&utm_source=google&utm_medium=cpc&utm_campaign=japac-KR-all-ko-dr-bkws-all-super-trial-e-dr-1003987&utm_content=text-ad-none-none-DEV_c-CRE_249736095774-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20T1%20%7C%20EXA%20%7C%20General%20%7C%201:1%20%7C%20KR%20%7C%20ko%20%7C%20cloud%20platform%20%7C%20google%20cloud%20platform%20%7C%20en-KWID_43700030027797672-kwd-26415313501&userloc_1009871&utm_term=KW_google%20cloud%20platform&gclid=Cj0KCQjwqs3rBRCdARIsADe1pfQ8mLmhW5SksKfrWD1lvCV2S5VYabK5fgOXGd12RmZaw8tXYfKk9SUaAtJxEALw_wcB)
-*
 * [google-cloud-bigquery 1.18.0]
- <br/>
+
  
  ## Quick Tutorial and Usage
  
