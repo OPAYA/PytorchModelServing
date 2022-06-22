@@ -1,5 +1,5 @@
 requests == 2.21.0
-numpy==1.16.1
+numpy==1.22.0
 google-cloud-bigquery==1.18.0
 google-cloud-storage==1.18.0
 google-cloud-core==1.0.3
